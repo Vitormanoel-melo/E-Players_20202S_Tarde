@@ -3,9 +3,10 @@
 :root{
 
     --background: #000000;
+    --bgnews: #1E1C21;
     --red: #C20000;
     --blue: #001F70;
-    --gradiente: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+    --gradient: linear-gradient(180deg, rgba(83, 83, 83, 0.5) 0%, #000000 100%);
 
     --font:'Titillium Web', sans-serif;
 }
@@ -228,96 +229,7 @@ img{
     margin-right: 0.5em;
 }
 
-.noticias{
-    width: 100%;
-    height: 55.125em;
-    background-color:#1E1C21;
-    color: #fff;
-}
-.noticia{
-    width: 85%;
-    height: 51em;
-    /* background-color: rgba(204, 204, 204, 0.555); */
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-top: 1em;
-}
 
-.noticia a{
-    color: #fff;
-    text-decoration: none;
-}
-
-.noticia a:hover{
-    text-decoration: underline;
-}
-
-
-.noticia1{
-    background-image: var(--gradiente);
-    /* background-color: yellow; */
-    width: 14.81em;
-    height: 22em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 1px 1px 20px 4px #000000;
-}
-.game-noticia h2{
-    font-size: 2.1875em;
-}
-
-
-.text-noticia{
-    width: 90%;
-    height: 50%;
-}
-
-.jogos{
-    width: 17em;
-    height: 46.93em;
-    /* background-color: yellowgreen; */
-    background-image: var(--gradiente);
-    box-shadow: 1px 1px 20px 4px #000000;
-}
-
-.jogos img{
-    width: 2.5em;
-}
-
-
-.jogo-content{
-    width: 95%;
-    height: 100%;
-    /* background-color: #ccc; */
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.jogo1{
-    /* background-color: violet; */
-    width: 100%;
-    height: 6em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.times{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.jogo1 p:nth-child(2){
-    color: #fff;
-    text-align: center;
-    font-size: 0.8em;
-    margin-top: 0.6em;
-}
 
 .rodape{
     width: 100%;
@@ -350,9 +262,87 @@ img{
     justify-content: space-between;
     align-items: center;
 }
+.bg-news{
+    width: 100%;
+    height:auto;
+    background-color:var(--bgnews);
+
+}
+
+.news{
+    width: 70%;
+    height: 90%;
+    /* background-color: rgba(204, 204, 204, 0.562); */
+}
+.news h2, .next-games h2{
+    color: #fff;
+    margin: 1em 0;
+    font-size: 2.1875em;
+}
 
 
+.next-games{
+    width: 25%;
+    height: 90%;
+    /* background-color: rgba(204, 204, 204, 0.562); */
+}
+.content-news{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.cardnews{
+    width: 15em;
+    height: 22.5em;
+    background: var(--gradient);
+    color: #fff;
+    box-shadow: 1px 1px 20px 4px #000000;
+    margin-bottom: 2em;
+}
+.cardnews h3{
+    padding: 0.5em 0.6em;
+}
+.cardnews p{
+    padding: 0em 0.6em;
+}
+
+.next-games-bg{
+    width: 90%;
+    height: auto;
+    background: var(--gradient);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em 0;
+}
+
+.teams{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.next-games-match{
+    width: 100%;
+    height: 6.25em;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+}
+.next-games-match img{
+    max-width: 2.5em;
+}
+.next-games-match div{
+    display: flex;
+    align-items: center;
+}
+.next-games-match >p{
+    margin-top: 1em;
+}
 
 
 /* Até 1199px */
