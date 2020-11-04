@@ -164,6 +164,7 @@ img{
 }
 .content-about{
     width: 95%;
+    max-width: 75em;
     margin: auto;
     display: flex;
     align-items: center;
