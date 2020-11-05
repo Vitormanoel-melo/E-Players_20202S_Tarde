@@ -27,6 +27,14 @@ body{
     height: 5em;
     /* background-color: aliceblue; */
 }
+.header-content{
+    width: 95%;
+    max-width: 75em;
+    height: 100%;
+    /* background-color: rgba(0, 255, 255, 0.459); */
+    margin: auto;
+}
+
 .content{
     width: 95%;
     max-width: 75em;
@@ -78,14 +86,14 @@ img{
     position: relative;
 }
 .banner-container{
-    width: 95%;
+    width: 100%;
     height: 100%;
     position: absolute;
     /* background-color: rgba(0, 255, 255, 0.37); */
     top: 0;
 }
 .banner-content{
-    width: 85%;
+    width: 95%;
     height: 100%;
     margin: auto;
     display: flex;
@@ -193,6 +201,10 @@ img{
 .linha{
     border: solid 1px #fff;
     height: 3em;
+}
+.games-2{
+    width: 100%;
+    height: 7.5em;
 }
 
 .games-aovivo, .games-embreve{
@@ -372,8 +384,81 @@ img{
 
 /* Até 1199px */
 @media screen and (max-width: 74.93em){
-    
-}
+    .header-top{
+        height: 11em;
+    }
+
+    .header-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .header-top img{
+        margin-top: 1em;
+    }
+    .menu{
+        max-width: 55em;
+    }
+    .banner-text{
+        width: 59%;
+    }
+    .banner-text h1{
+        font-size: 4.5em;
+    }
+    .banner-text p{
+        font-size: 1.5em;
+    }
+    .games ul a:hover img{
+        transition: 0.5s;
+        transform: scale(1.2);
+    }
+    .text-about{
+        width: 45%;
+    }
+    .text-about p{
+        font-size: 1em;
+    }
+    .content-about img{
+        max-width: 30em;
+    }
+    .games-2{
+        height: 15em;
+    }
+    .games-2 .content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.5em 0;
+    }
+    .linha{
+        width: 59em;
+        height: unset;
+    }
+    .games-embreve{
+        display: flex;
+        justify-content: space-between;
+    }
+    .partida {
+        margin-right: 2em;
+    }
+    .news{
+        width: 64%;
+    }
+    .next-games{
+        margin-bottom: 28em;
+    }
+    .rodape .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .links-footer{
+        width: 90%;
+        justify-content: space-between;
+    }
+    .logo-rodape{
+        position: absolute;
+        margin-top: 3em;
+    }
 /* Até 991px */
 @media screen and (max-width: 61.93em){
 
