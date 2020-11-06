@@ -74,12 +74,13 @@ img{
     text-transform: uppercase;
     padding: 0.9em 0.66em;
 }
-.menu a:hover{
+.menu  a:hover{
     background-color: var(--red);
     text-shadow: 0 0 20px #fff;
     text-decoration: underline;
+    
 }
-#menu-bars{
+.btn-menu{
     display: none;
 }
 .banner{
@@ -241,15 +242,10 @@ img{
     width: 1.6em;
     margin-right: 0.5em;
 }
-
-
-
-
-
 .bg-news{
     width: 100%;
     height:auto;
-    background-color:var(--bgnews);
+    background-color: var(--bgnews);
 
 }
 
@@ -461,8 +457,86 @@ img{
     }
 /* Até 991px */
 @media screen and (max-width: 61.93em){
-
+    .header-top{
+        height: 5em;
+    }
+    .header-content{
+        display: flex;
+        flex-direction: row;
+    }
+    .header-top img{
+        margin-top: 0;
+    }
+    .menu{
+        z-index: 99;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .menu ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 5em;
+        background-color: rgba(0, 0, 0, 0.856);
+        width: 100%;
+        height: 20em;
+        justify-content: space-around;
+        right: 0;
+    }
+    .btn-menu{
+        display: flex;
+        /* justify-content: flex-end; */
+        /* margin: 50px; */
+        padding:  1em 1em;
+    }
+    .banner-text{
+        width: 62%;
+    }
+    .games{
+        height: auto;
+    }
+    .games ul{
+        flex-wrap: wrap;
+        width: 90%;
+        padding: 1em 0;
+        margin: auto;
+        margin-bottom: 1em;
+    }
+    .games a{
+        padding: 5em 0;
+    }
+    .games li:nth-child(2){
+        margin-top: 5em;
+    }
+    }
+    .linha{
+        width: 100%;
+    }
+    
+    .container-about{
+        height: 31.25em;
+    }
+    .content-about{
+        height: 31.25em;
+    }
+    .text-about{
+        width: 53%;
+    }
+    .content-about img{
+        max-width: 21em;
+    }
+    .botao-menu{
+        width: 8em;
+        padding: auto;
+        font-size: 16px;
+        display: flex;
+    }
+    .news{
+        width: 77%;
+    }
+    .bg-news .content
 }
+
 /* Até 767px */
 @media screen and (max-width: 47.93em){
 
