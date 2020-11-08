@@ -380,99 +380,181 @@ font-size: 1.1em;
 color: #b8b383;
 font-weight: bold;
 }
-#btn-menu{
+.btn-menu{
 display: none;
 }
 
 /* Até 1199px */
 @media screen and (max-width: 74.93em){
-.header-top{
-    height: 11em;
+    .header-top{
+        height: 11em;
+    }
+    .header-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .header-top img{
+        margin-top: 1em;
+    }
+    .menu{
+        max-width: 55em;
+    }
+    .banner-text{
+        width: 59%;
+    }
+    .banner-text h1{
+        font-size: 4.5em;
+    }
+    .banner-text p{
+        font-size: 1.5em;
+    }
+    .games ul a:hover img{
+        transition: 0.5s;
+        transform: scale(1.2);
+    }
+    .text-about{
+        width: 45%;
+    }
+    .text-about p{
+        font-size: 1em;
+    }
+    .content-about img{
+        max-width: 30em;
+    }
+    .games-2{
+        height: 15em;
+    }
+    .games-2 .content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.5em 0;
+    }
+    .linha{
+        width: 59em;
+        height: unset;
+    }
+    .games-embreve{
+        display: flex;
+        justify-content: space-between;
+    }
+    .partida {
+        margin-right: 2em;
+    }
+    .news{
+        width: 64%;
+    }
+    .next-games{
+        margin-bottom: 28em;
+    }
+    .rodape .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .links-footer{
+        width: 90%;
+        justify-content: space-between;
+    }
+    .logo-rodape{
+        position: absolute;
+        margin-top: 3em;
+    }
+    .botao-menu a{
+        display: none;
+    }
 }
 
-.header-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.header-top img{
-    margin-top: 1em;
-}
-.menu{
-    max-width: 55em;
-}
-.banner-text{
-    width: 59%;
-}
-.banner-text h1{
-    font-size: 4.5em;
-}
-.banner-text p{
-    font-size: 1.5em;
-}
-.games ul a:hover img{
-    transition: 0.5s;
-    transform: scale(1.2);
-}
-.text-about{
-    width: 45%;
-}
-.text-about p{
-    font-size: 1em;
-}
-.content-about img{
-    max-width: 30em;
-}
-.games-2{
-    height: 15em;
-}
-.games-2 .content{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0.5em 0;
-}
-.linha{
-    width: 59em;
-    height: unset;
-}
-.games-embreve{
-    display: flex;
-    justify-content: space-between;
-}
-.partida {
-    margin-right: 2em;
-}
-.news{
-    width: 64%;
-}
-.next-games{
-    margin-bottom: 28em;
-}
-.rodape .content{
-    display: flex;
-    flex-direction: column;
-}
-.links-footer{
-    width: 90%;
-    justify-content: space-between;
-}
-.logo-rodape{
-    position: absolute;
-    margin-top: 3em;
-}
-#btn-menu{
-    display: none;
-}
+
 /* Até 991px */
+
 @media screen and (max-width: 61.93em){
-
-
+    .header-top{
+        height: 5em;
+    }
+    .header-content{
+        display: flex;
+        flex-direction: row;
+    }
+    .header-top img{
+        margin-top: 0;
+    }
+    .menu{
+        z-index: 99;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .menu a{
+        padding: 0.5em 0.66em;
+    }
+    .menu ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 5em;
+        background-color: rgba(0, 0, 0, 0.856);
+        width: 100%;
+        height: 20em;
+        justify-content: space-around;
+        right: 0;
+    }
+    .botao-menu a{
+        display: inline;
+        padding:  1em 1em;
+    }
+    .banner-text{
+        width: 62%;
+    }
+    .games{
+        height: auto;
+    }
+    .games ul{
+        flex-wrap: wrap;
+        width: 90%;
+        padding: 1em 0;
+        margin: auto;
+        margin-bottom: 1em;
+    }
+    .games a{
+        padding: 5em 0;
+    }
+    .games li:nth-child(2){
+        margin-top: 5em;
+    }
+    .linha{
+        width: 100%;
+    }
+    
+    .container-about{
+        height: 31.25em;
+    }
+    .content-about{
+        height: 31.25em;
+    }
+    .text-about{
+        width: 53%;
+    }
+    .content-about img{
+        max-width: 21em;
+    }
+    .news{
+        width: 70%;
+    }
+    .next-games{
+        margin-bottom: 24em;
+        margin-top: -5em;
+    }
+    .next-games-bg{
+        width: 100%;
+    }
 }
+
 /* Até 767px */
 @media screen and (max-width: 47.93em){
 
 }
+
+
 /* Até 576px */
 @media screen and (max-width: 36em){
 
