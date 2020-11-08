@@ -644,9 +644,70 @@ display: none;
     }
 
 }
-
-
 /* Até 576px */
 @media screen and (max-width: 35.93em){
-
+    .header-top{
+        height: 4em;
+    }
+    .header-top img{
+        max-width: 16em;
+    }
+    .botao-menu a{
+        padding: 1em 1em;
+    }
+    .menu ul{
+        top: 4em;
+        height: 14.8em;
+    }
+    .menu a{
+        font-size: 1.1em;
+    }
+    .banner-text{
+        width: 55%;
+        display: flex;
+        align-items: flex-start;
+    }
+    .banner-text h1{
+        font-size: 2em;
+    }
+    .banner-text a{
+        font-size: 1em;
+        margin-bottom: 1em;
+    }
+    .games{
+        height: 30em;
+    }
+    .games a{
+        padding: 3em 0;
+    }
+    .about{
+        height: 54em;
+    }
+    .angulation{
+        transform: skewY(-51deg);
+    }
+    .text-about h2{
+        font-size: 1.77em;
+    }
+    .games-2{
+        height: 43em;
+    }
+    .games-2 .content{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .linha{
+        width: 95%;
+        height: unset;
+    }
+    .games-aovivo, .games-embreve{
+        padding: 2em 0;
+    }
+    .news{
+        width: 67%;
+    }
+    .links-footer{
+        justify-content: space-between;
+    }
 }
